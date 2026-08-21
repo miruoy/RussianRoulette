@@ -13,16 +13,13 @@
 # You should have received a copy of the GNU General Public License along
 # with this program; if not, see <https://www.gnu.org/licenses/>.
 
-### RussianRoulette — plugin entry point
-from . import plugin
-from . import config
-from importlib import reload
-reload(plugin)  # In case we're being reloaded.
+### RussianRoulette — configuration
+import supybot.conf as conf
+import supybot.utils as utils
+from supybot.i18n import PluginInternationalization, internationalizeDocstring
+_ = PluginInternationalization('RussianRoulette')
 
-__version__ = '1.0.0'
-__author__ = supybot.Author(name='Youri Matthys', nick='miruoy',
-                             email='miruoy@users.noreply.github.com')
-__contributors__ = {}
-__url__ = 'https://github.com/miruoy/RussianRoulette'
-
-Class = plugin.Class
+RussianRoulette = conf.registerPlugin('RussianRoulette')
+# Add your configuration variables (if any) here, e.g.:
+# conf.registerGlobalValue(RussianRoulette, 'someVariable',
+#     registry.Boolean(False, _("""Help for someVariable.""")))

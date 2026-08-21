@@ -35,7 +35,19 @@ each time, so you never see the same line twice in a row.
 
 ## Installation
 
+```
+### Via pip (from the git repo)
 ```bash
+pip3 install git+https://github.com/miruoy/RussianRoulette.git
+# then in the bot:
+load RussianRoulette
+```
+
+### Via PluginDownloader (after the repo is added to Limnoria's list)
+```bash
+@plugindownloader install miruoy
+```
+bash
 cp -r RussianRoulette /path/to/your/bot/plugins/
 rm -rf /path/to/your/bot/plugins/RussianRoulette/__pycache__
 # in the bot:
