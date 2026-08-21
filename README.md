@@ -53,3 +53,9 @@ stale `.pyc` will keep the old code live.
   invalid. Fix `phrases.json` in the plugin directory.
 - **`phrases.json needs non-empty "bang" and "safe" lists.`** — one of the
   two lists is empty. Add at least one phrase to each.
+
+## License
+
+Licensed under the GNU General Public License v2 (GPL-2.0). See the
+`LICENSE` file for the full text.
+
